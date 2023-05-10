@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0 0 20px;
+    font-size: 36px;
+    line-height: 1.5;
+    color: #333;
+    text-align: center;
+}
+
+/* 搜索表单样式 */
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+label {
+    display: none;
+}
+
+input[type="text"] {
+    width: 60%;
+    height: 40px;
+    margin-right: 10px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    transition: border-color 0.2s ease-in-out;
+}
+
+input[type="text"]:focus {
+    border-color: #009688;
+}
+
+button[type="submit"] {
+    height: 40px;
+    padding: 0 20px;
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #00796b;
+}
+
+/* 结果表格样式 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+}

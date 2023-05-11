@@ -29,7 +29,7 @@ async def search(q: str):
     cursor.execute(sql, (keyword,))
     result = cursor.fetchall()
     if len(result) == 0:
-        return "Sorry, No related issues found!"
+        return [{"Source": "暂时没找到", "Q": "暂时没找到", "A": "暂时没找到"}]
     ans = ["Find {} related issues in total".format(len(result))]
     ans = [{"Source": "无" if i[2] == "undefined" else i[2], "Q": i[5], "A": i[4]} for i in result]
     return ans

@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <title>搜题搜题</title>
     <link rel="shortcut icon" href="https://blog.csdn.net/favicon.ico">
-
 </head>
 
 <body>
@@ -72,8 +71,6 @@
 </html>
 <style>
 
-
-
     body {
         margin: 0;
         padding: 0;
@@ -81,12 +78,9 @@
         background-color: #f5f5f5;
     }
 
-    .container {
-        max-width: 600px;
-        margin: 0 auto;
-        padding: 20px;
+    .resultContainer{
+        position: static;
     }
-
     h1 {
         margin: 0 0 20px;
         font-size: 36px;
@@ -144,9 +138,8 @@
 
     table {
         width: 70%;
-        margin: 0 auto;
-        /* 添加居中样式 */
         border-collapse: collapse;
+        margin: 0 auto; /* 添加居中样式 */
         margin-bottom: 40px;
     }
 
@@ -154,11 +147,11 @@
     td {
         padding: 10px;
         border: 1px solid #ccc;
-        text-align: left;
         vertical-align: middle;
         font-size: 14px;
         line-height: 1.5;
         color: #333;
         text-align: center;
+        overflow-wrap: anywhere; 
     }
 </style>
